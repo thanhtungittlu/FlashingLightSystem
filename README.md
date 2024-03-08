@@ -5,10 +5,10 @@ This version returns an API that lists the light bulbs in a room along with the 
 API (GET): {host}/api/v1.0/light/lights-in-room/<room_id>
 
 # Run App
-Step1: change Env
-Steo2: Create index: python ensure_indexes_mongo.py
-Step3: Install lib in enviroment: pip install -r requirements.txt
-step4: Run app: python app.py
+Step1: change Env\\
+Step2: Create index: python ensure_indexes_mongo.py\\
+Step3: Install lib in enviroment: pip install -r requirements.txt\\
+step4: Run app: python app.py\\
 
 # Enviroment
 | Env name | Example vallue | Description |
