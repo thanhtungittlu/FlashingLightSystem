@@ -17,4 +17,5 @@ class HTTP:
 
 class URI:
     LIGHT_PING = '/light/ping'
+    LIGHTS_IN_ROOM = '/light/lights-in-room/<room_id>'
 

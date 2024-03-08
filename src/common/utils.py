@@ -5,6 +5,7 @@ from bson import Int64
 from decimal import Decimal
 from bson.objectid import ObjectId
 from enum import Enum
+import uuid
 
 def to_dict(obj, **kwargs):
     time_format = '%Y-%m-%dT%H:%M:%S.%sZ'
@@ -72,3 +73,10 @@ def _handling_specific_type(value, time_format):
 
     if isinstance(value, Enum):
         return value.value
+
+def validate_uuid(uuid_str):
+    try:
+        uuid.UUID(uuid_str)
+        return True
+    except ValueError:
+        return False
