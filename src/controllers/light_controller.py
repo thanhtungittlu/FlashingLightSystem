@@ -1,6 +1,6 @@
 from src.models.mongo.lights import LightStructure,Lights
 from src.common.utils import to_dict, validate_uuid
-
+import math
 class LightsControlller():
     def ping(self):
         return  {
@@ -31,9 +31,14 @@ class LightsControlller():
             }
         lights_model = Lights()
         lights = lights_model.collector().find({'room_id': room_id})
-        res = self.sort_light_by_color(to_dict(lights))
+        lights = self.sort_light_by_color(to_dict(lights))
+        list_flashing_cycle_time = [light.get(LightStructure.LIGHT_FLASHING_CYCLE_TIME) for light in lights]
+        distance_times_all_light_on = math.lcm(*list_flashing_cycle_time) - 1
         return  {
             "code": 200,
-            "data": res,
+            "data": {
+                "list_light": lights,
+                "distance_times_all_light_on": distance_times_all_light_on
+            },
             "message": "success"
         }
