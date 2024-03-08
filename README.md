@@ -6,8 +6,9 @@ API (GET): {host}/api/v1.0/light/lights-in-room/<room_id>
 
 # Run App
 Step1: change Env
-Step2: Install lib in enviroment: pip install -r requirements.txt
-step3: Run app: python app.py
+Steo2: Create index: python ensure_indexes_mongo.py
+Step3: Install lib in enviroment: pip install -r requirements.txt
+step4: Run app: python app.py
 
 # Enviroment
 | Env name | Example vallue | Description |
