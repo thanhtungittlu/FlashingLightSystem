@@ -1,0 +1,13 @@
+[
+    {
+        "table": "lights",
+        "name": "room_id_1",
+        "fields": [
+          {
+            "field_name": "room_id",
+            "index_type": 1
+          }
+        ],
+        "background": true
+    }
+]
