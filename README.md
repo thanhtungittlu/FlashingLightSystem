@@ -15,4 +15,10 @@ step4: Run app: python app.py
 |---------|---------|-----------------|
 | APP_NAME  |  Flasing Light System    | App Name      |
 | WORKING_DIR   | /home/tunglt/Dev/FlashingLightSystem    | Working dir  |
-| MONGO_URI   | mongodb://localhost:27017/light_db    | uri connect mongo    |
+| MONGO_URI   |  abcd  | config mqtt  |
+| MQTT_HOST   | abcd    | config mqtt    |
+| MQTT_PORT   | abcd    | config mqtt    |
+| MQTT_CERTIFICATE   | abcd    | config mqtt    |
+| MQTT_PRIVATE_KEY   | abcd    | config mqtt    |
+| MQTT_ROOTCA   | abcd    | config mqtt    |
+| MQTT_TOPIC   | abcd    | config mqtt    |
