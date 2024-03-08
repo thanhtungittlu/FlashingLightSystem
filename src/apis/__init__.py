@@ -16,5 +16,5 @@ class HTTP:
         OK = 200
 
 class URI:
-    PING = 'ping'
+    LIGHT_PING = '/light/ping'
 

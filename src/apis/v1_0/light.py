@@ -5,7 +5,7 @@ from flask import jsonify
 
 light_mod = Blueprint("light_service", __name__)
 
-@light_mod.route(URI.PING, methods=[HTTP.METHOD.GET])
+@light_mod.route(URI.LIGHT_PING, methods=[HTTP.METHOD.GET])
 def ping():
     return LightsControlller().ping()
     
